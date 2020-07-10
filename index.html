@@ -21,24 +21,12 @@
   #animation_container {
 	position:absolute;
 	margin:auto;
-	left:auto;right:auto;
-	top:auto;bottom:auto;
+	left:-400%;right:-400%;
+	top:-400%;bottom:-400%;
+	  height: 100vh;
   }
 </style>
 	
-<script>
-function disableScroll(){  
-    var x = window.scrollX;
-    var y = window.scrollY;
-    window.onscroll = function(){ window.scrollTo(x, y) };
-}
-
-function enableScroll(){  
-    window.onscroll = null;
-}
-
-
-</script>	
 <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
 <script>
 (function (cjs, an) {
